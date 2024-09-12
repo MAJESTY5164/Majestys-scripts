@@ -1,6 +1,6 @@
--- getgenv().DiscordInvite = Invite without the discord.gg/
+-- getgenv().DiscordInvite = "WPFYykM75b"
 
-local requestData = {
+        local requestData = {
             cmd = 'INVITE_BROWSER',
             args = { code = getgenv().DiscordInvite },
             nonce = game:GetService("HttpService"):GenerateGUID(false)
@@ -11,5 +11,4 @@ local requestData = {
             Method = 'POST',
             Headers = { ['Content-Type'] = 'application/json', ['Origin'] = 'https://discord.com' },
             Body = game:GetService("HttpService"):JSONEncode(requestData)
-        }) 
-  	end    
+        })     
