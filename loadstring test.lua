@@ -1,2 +1,1 @@
-controllerUrl = "https://raw.githubusercontent.com/MAJESTY5164/Nebula-Hub/main/Controller.lua"
-    loadstring(game:HttpGet(controllerUrl))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MAJESTY5164/Majestys-scripts/E/Loadstringtest"))()
