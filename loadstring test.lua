@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MAJESTY5164/Majestys-scripts/main/load"))()
+loadstring(game:HttpGet("https://github.com/MAJESTY5164/Majestys-scripts/blob/main/checkexec.lua"))()
