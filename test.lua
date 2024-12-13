@@ -168,14 +168,14 @@ CreateGui = function()
     Main.Name = "DexMain"
     Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     Main.ResetOnSpawn = false
-    Main.Visible = false
+    Main.Enabled = false
     
     NewGuiPart1.Name = "Dex"
     NewGuiPart1.Parent = Main
 
 
     getgenv().Dex = function(visible)
-        Main.Visible = visible
+        Main.Enabled = visible
     end
 
     NewGuiPart2.Name = "PropertiesFrame"
