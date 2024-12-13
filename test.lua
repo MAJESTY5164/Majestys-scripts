@@ -175,7 +175,7 @@ CreateGui = function()
 
 
     getgenv().Dex = function(visible)
-        Main.Enabled = visible
+        NewGuiPart1.Enabled = visible
     end
 
     NewGuiPart2.Name = "PropertiesFrame"
