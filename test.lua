@@ -1,4 +1,5 @@
 CreateGui = function()
+    Main = Instance.new("ScreenGui")
     local NewGuiPart1 = Instance.new("ScreenGui")
     local NewGuiPart2 = Instance.new("Frame")
     local NewGuiPart3 = Instance.new("Frame")
@@ -163,13 +164,18 @@ CreateGui = function()
     local NewGuiPart162 = Instance.new("BindableFunction")
     local NewGuiPart163 = Instance.new("BindableEvent")
     -- Properties
+
+    Main.Name = "DexMain"
+    Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    Main.ResetOnSpawn = false
+    Main.Visible = false
     
     NewGuiPart1.Name = "Dex"
-    NewGuiPart1.ResetOnSpawn = false
-    NewGuiPart1.Visible = false
+    NewGuiPart1.Parent = Main
+
 
     getgenv().Dex = function(visible)
-        NewGuiPart1.Visible = visible
+        Main.Visible = visible
     end
 
     NewGuiPart2.Name = "PropertiesFrame"
