@@ -167,6 +167,11 @@ CreateGui = function()
     NewGuiPart1.Name = "Dex"
     NewGuiPart1.ResetOnSpawn = false
     NewGuiPart1.Parent = game:GetService("CoreGui")
+    NewGuiPart1.Visible = false
+
+    getgenv().Dex = function(visible)
+        NewGuiPart1.Visible = visible
+    end
 
     NewGuiPart2.Name = "PropertiesFrame"
     NewGuiPart2.Parent = NewGuiPart1
